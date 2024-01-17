@@ -1,4 +1,5 @@
-
+  export const dynamic = 'auto'
+// 'auto' | 'force-dynamic' | 'error' | 'force-static'
 import getCurrentUser from "./actions/getCurrentUser";
 import getListings, { IListingsParams } from "./actions/getListings";
 import ClientOnly from "./components/ClientOnly";
@@ -11,6 +12,7 @@ interface  HomeProps{
 
 
 const Home = async({searchParams}:HomeProps)  =>{ 
+
   const listings = await getListings(searchParams);
   const currentUser = await getCurrentUser();
 

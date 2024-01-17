@@ -1,4 +1,9 @@
-
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
+  images
   images: {
     domains: [
       'res.cloudinary.com', 

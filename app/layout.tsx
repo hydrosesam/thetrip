@@ -1,5 +1,5 @@
 
-  export const dynamic = 'auto'
+  export const dynamic = 'force-dynamic'
 // 'auto' | 'force-dynamic' | 'error' | 'force-static'
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
